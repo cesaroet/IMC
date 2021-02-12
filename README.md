@@ -1,2 +1,2 @@
 # IMC
- Mini projeto para calculo de IMC
+ Mini projeto para calculo de IMC em javascript.
