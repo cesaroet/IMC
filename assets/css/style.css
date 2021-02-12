@@ -1,6 +1,8 @@
 :root {
-  --primary-color: rgb(17, 86, 102);
-  --primary-color-darker: rgb(9, 48, 56);
+  --primary: #363f5f;
+  --secondary: #273979;
+  --green:  #49aa26;
+  --red: #e92929;
 }
 
 * {
@@ -8,21 +10,31 @@
   outline: 0;
 }
 
+html {
+  font-size: 93.75%; /* 15px */
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
+  background: #878e97;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.3em;
   line-height: 1.5em;
+  
 }
 
 h1 {
   text-align: center;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--primary);
+  font-weight: normal;
 
 }
 
 .container {
+  width: min(90vw, 800px);
   max-width: 640px;
   margin: 50px auto;
   background: #fff;
@@ -44,28 +56,31 @@ form input {
 }
 
 form input:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--primary);
 
 }
 
 form button {
-  border: none;
-  background: var(--primary-color);
+  background: var(--primary);
   text-align: center;
   color: #fff;
   font-size: 18px;
   font-weight: 400;
   height: 50px;
-  cursor: pointer;
   margin-top: 30px;
+  width: 100%;
+  border: none;
+  padding: 0;
+  border-radius: 0.2rem;
+  cursor: pointer;
 }
 
 form button:hover {
-  background: var(--primary-color-darker);
+  background: var(--secondary);
 }
 
 .paragrafo-resultado {
-  background: green;
+  background: var(--green);
   padding: 10px 20px;
 }
 
